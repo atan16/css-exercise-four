@@ -1,0 +1,80 @@
+body {
+  background-color: #dadada;
+  font-size: 10px;
+}
+
+.container {
+  padding-top: 25px;
+  max-width: 500px;
+  margin: auto;
+}
+
+
+div {
+  float: left;
+  width: 100%;
+  padding-top: 30px;
+}
+
+span {
+  text-transform: uppercase;
+  width: inherit;
+  text-align: center;
+  font-size: 2em;
+}
+
+.imgtext {
+  display: block;
+  z-index: 2;
+  font-weight: 1000;
+  font-size: 2em;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+}
+
+.image {
+  object-fit: cover;
+  display: block;
+  position: relative;
+  width: inherit;
+}
+
+@media screen and (min-width: 575px){
+  div {
+    margin: 1%;
+    width: 48%;
+  }
+  .container {
+    max-width: 991px;
+  }
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+  }
+  .imgtext {
+    padding-left: 15%
+  }
+
+@media screen and (min-width: 991px){
+   div {
+    margin: 1%;
+    width: 23%;
+  }
+  .container {
+    max-width: 1199px;
+  }
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+  }
+  .imgtext {
+    padding-left: 1%
+  }
+}
